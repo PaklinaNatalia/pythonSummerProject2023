@@ -1,8 +1,13 @@
-input_list = [10, 'э', 15, 'ABC', 1]
-for i in input_list:
-    if type(i) == str:
-        print(i * 5)
-    elif type(i) == int:
-        print(i ** 2)
-    else:
-        print(i)
+lst_1 = []
+lst_2 = []
+n = int(input("Введите n: "))
+for i in range(n):
+    a = int(input("Введите a: "))
+    lst_1.append(a)
+j = 0
+for i in lst_1:
+    j += i
+    lst_2.append(j)
+print(j)
+print(*lst_1)
+print(*lst_2)
