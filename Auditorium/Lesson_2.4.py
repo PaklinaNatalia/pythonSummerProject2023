@@ -1,9 +1,8 @@
-mass = [1, 2, 3, 4]
-print(len(mass))
-print(len('cat'))
-print()
-a = [10, 20, 30, 40]
-for k, v in enumerate(a):
-    print(k, v)
-print()
-print(*list(range(10)))
+input_list = [10, 'э', 15, 'ABC', 1]
+for i in input_list:
+    if type(i) == str:
+        print(i * 5)
+    elif type(i) == int:
+        print(i ** 2)
+    else:
+        print(i)
