@@ -15,3 +15,7 @@ print(f"x / y = {div_xy}")
 print(f"x // y = {intdiv_xy}")
 list_xy = [sum_xy, diff_xy, multi_xy, div_xy, intdiv_xy]
 list_xy.sort()
+if list_xy[-1] == list_xy[-2]:
+    print(f"Второе по величине число: {list_xy[-3]}")
+else:
+    print(f"Второе по величине число: {list_xy[-2]}")
