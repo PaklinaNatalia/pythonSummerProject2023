@@ -1,3 +1,4 @@
+#Для Task_2.2
 from random import randint
 lst = [3, -1, 0, 1, 2]
 mi = lst[0]

@@ -1,10 +1,9 @@
-#Варианты форматирования
-n = 123
-s = "abc"
-print(f"{n}___{s}")
-print(f"{n:4}___{s}")
-print(f"{n:4}___{s:5}")
-print(f"{n:4}___{s:>5}")
-print(f"{n:<4}___{s:>5}")
-print(f"{n:0<4}___{s:*>5}")
-print(f"{n:04}___{s:*<5}")
+#Проверка строки на палиндромность
+s = input()
+n = len(s)
+for i in range(n // 2):
+    if s[i] != s[n - i - 1]:
+        print(False)
+        break
+    else:
+        print(True)
