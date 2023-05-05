@@ -1,4 +1,4 @@
-sent = str(input("Введите предложение: "))
+sent = input("Введите предложение: ")
 splitted_sent = sent.split()
 for i in range(len(splitted_sent)):
     print(splitted_sent[i], len(splitted_sent[i]))
