@@ -32,3 +32,6 @@ print()
 a = [4, 'cat', 6, 3]
 a.append(3)
 print(*a)
+print()
+for i in range(ord("A"), ord("A") + 26):
+    print(i, chr(i))
