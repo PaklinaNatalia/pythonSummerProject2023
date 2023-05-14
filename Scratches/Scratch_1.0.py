@@ -35,3 +35,24 @@ print(*a)
 print()
 for i in range(ord("A"), ord("A") + 26):
     print(i, chr(i))
+print()
+lst = [[1, 2, 3], [10, 20], [100]]
+s = 0
+for i in lst:
+    s += sum(i)
+print(s)
+lst = [[1, 2, 3], [10, 20], [100]]
+s = 0
+for i in lst:
+    for j in i:
+        s += j
+print(s)
+print()
+lst = [1, -2, 3, -4, 5, -6, 7, -8, 9, -10]
+print(lst)
+print(f"Максимум: {max(lst)}, минимум: {min(lst)}, сумма: {sum(lst)}")
+print(f"Максимум: {max(lst, key = abs)}, минимум: {min(lst, key = abs)}, сумма: {sum(lst)}")
+print()
+a = [1, 2, 3, 4, 5]
+print(a)
+print(a.index(4))

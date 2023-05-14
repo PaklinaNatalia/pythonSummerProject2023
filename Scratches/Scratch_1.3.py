@@ -9,9 +9,10 @@ for i in range(1, n + 1):
         lst.append(i)
 print(lst)
 print([n] * n)
-
+print()
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 result = []
 for i in range(26):
     result.append(alphabet[i] * (i + 1))
 print(result)
+print()

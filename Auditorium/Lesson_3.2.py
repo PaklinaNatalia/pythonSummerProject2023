@@ -1,17 +1,11 @@
-s1 = 0
-while True:
-    n = int(input("Введите n: "))
-    if n < 0:
-        print("Ввод окончен.")
-        break
-    s1 += n
-print(s1)
-
-s2 = []
-while True:
-    n = int(input("Введите n: "))
-    if n < 0:
-        print("Ввод окончен.")
-        break
-    s2.append(n)
-print(s2)
+cort = (123, 234, 345, 456, 567, 678, 789, 890)
+print(*cort)
+lst = list(cort)
+n = int(input("Введите n: "))
+if n <= 0:
+    print("Число n должно быть больше 0")
+    exit()
+lst.append(n)
+lst.sort()
+new_cort = tuple(lst)
+print(*new_cort)

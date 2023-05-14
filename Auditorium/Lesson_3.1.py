@@ -1,8 +1,17 @@
-lst = [1, -2, 3, -4, 5, -6, 7, -8, 9, -10]
-print(lst)
-print(f"Максимум: {max(lst)}, минимум: {min(lst)}, сумма: {sum(lst)}")
-print(f"Максимум: {max(lst, key = abs)}, минимум: {min(lst, key = abs)}, сумма: {sum(lst)}")
+s1 = 0
+while True:
+    n = int(input("Введите n: "))
+    if n < 0:
+        print("Ввод окончен.")
+        break
+    s1 += n
+print(s1)
 
-a = [1, 2, 3, 4, 5]
-print(a)
-print(a.index(4))
+s2 = []
+while True:
+    n = int(input("Введите n: "))
+    if n < 0:
+        print("Ввод окончен.")
+        break
+    s2.append(n)
+print(s2)
