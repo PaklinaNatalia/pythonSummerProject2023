@@ -1,7 +1,9 @@
-# lst = [10, True, [1, 2], "abccde"]
-# n = len(lst)
-# for i in range(-n, n):
-#     print(i, lst[1])
+lst = [10, True, [1, 2], "abccde"]
+n = len(lst)
+for i in range(-n, n):
+    print(i, lst[1])
+print()
+
 lst = []
 n = int(input("Введите n: "))
 for i in range(1, n + 1):
@@ -10,6 +12,7 @@ for i in range(1, n + 1):
 print(lst)
 print([n] * n)
 print()
+
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 result = []
 for i in range(26):

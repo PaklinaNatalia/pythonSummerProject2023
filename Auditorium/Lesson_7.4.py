@@ -1,14 +1,21 @@
-#Четность-нечетность чисел [0; n]
-def check(i):
-    def chet(i):
-        print(i, "Четное")
-    def nechet(i):
-        print(i, "Нечетное")
-    if i % 2:
-        nechet(i)
+# Функция FizzBuzz
+def fb(i):
+    def fb_3(i):
+       return "Fizz"
+    def fb_5(i):
+       return "Buzz"
+    def fb_15(i):
+       return "FizzBuzz"
+    def fb_other(i):
+        return str(i)
+    if i % 15 == 0:
+        res = fb_15(i)
+    elif i % 3 == 0:
+        res = fb_3(i)
+    elif i % 5 == 0:
+        res = fb_5(i)
     else:
-        chet(i)
-
-n = int(input("Введите число: "))
-for i in range(n + 1):
-    check(i)
+        res = fb_other(i)
+    return res
+for i in range(int(input("Введите i: ")) + 1):
+    print(fb(i))

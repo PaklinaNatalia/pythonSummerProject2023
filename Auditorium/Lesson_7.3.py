@@ -1,13 +1,18 @@
-#Вложенные функции
-def f(n):
-    def f1(p):
-        return p * p
-    def f2(w):
-        return w + w
-    if n < 10:
-        return f1(n)
+#Четность-нечетность чисел [0; n]
+#ЕСЛИ четное, ТО печатаем n[i]^2
+#ЕСЛИ нечетное, ТО печатаем n[i]^3
+def check(i):
+    def chet(i):
+        print(i, "Четное")
+        return i ** 2
+    def nechet(i):
+        print(i, "Нечетное")
+        return i ** 3
+    if i % 2:
+        res = nechet(i)
     else:
-        return f2(n)
-
-x = int(input("Введите n: "))
-print(f(x))
+        res = chet(i)
+    return res
+n = int(input("Введите число: "))
+for i in range(n + 1):
+    print(check(i))
