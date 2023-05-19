@@ -41,3 +41,7 @@ print()
 
 numbers = [123, 234, 345, 456, 567, 678, 789, 890, 901]
 print(list(map(lambda x: sum(map(int, str(x))), numbers)))
+
+c = [("Ф1", 100), ("Ф2", 200), ("Ф3", 200), ("Ф4", 300), ("Ф5", 100)]
+for i in sorted(c, key = lambda x: (-x[1], x[0])):
+    print(*i)
