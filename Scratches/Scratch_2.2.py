@@ -27,3 +27,7 @@ with open ("../Texts/text_02.txt", "w", encoding ="utf-8") as fout:
 with open ("../Texts/text_02.txt", "r", encoding ="utf-8") as fin:
     for i in fin:
         print(222, i.strip())
+
+from openpyxl import Workbook
+wb = Workbook()
+wb.save("../Texts/text_05.xlsx")
