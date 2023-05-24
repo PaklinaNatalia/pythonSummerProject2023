@@ -1,5 +1,5 @@
 import openpyxl
-wb = openpyxl.load_workbook("../Texts/text_05.xlsx")
+wb = openpyxl.load_workbook("../../Texts/text_05.xlsx")
 ws = wb["Лист1"]
 su = 0
 for i in range(1, ws.max_row + 1):

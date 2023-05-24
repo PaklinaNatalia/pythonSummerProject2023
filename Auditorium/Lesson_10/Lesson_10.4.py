@@ -1,5 +1,5 @@
 import openpyxl
-wb = openpyxl.load_workbook("../Texts/text_05.xlsx")
+wb = openpyxl.load_workbook("../../Texts/text_05.xlsx")
 print(wb.sheetnames)
 ws = wb.active
 ws["A1"].value = 100

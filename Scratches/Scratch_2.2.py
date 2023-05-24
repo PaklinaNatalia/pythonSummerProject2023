@@ -31,3 +31,15 @@ with open ("../Texts/text_02.txt", "r", encoding ="utf-8") as fin:
 from openpyxl import Workbook
 wb = Workbook()
 wb.save("../Texts/text_05.xlsx")
+
+with open ("../Texts/text_01.txt", "r", encoding ="utf-8") as fin:
+    print(fin.readlines())
+with open ("../Texts/text_02.txt", "w", encoding ="utf-8") as fout, open ("../Texts/text_01.txt", "r", encoding ="utf-8") as fin:
+    for line in fin:
+        print(line.strip(), file = fout)
+
+import csv
+with open("../../Texts/rating.csv") as fi:
+    rows = csv.DictReader(fi)
+    for row in rows:
+        print(row)
