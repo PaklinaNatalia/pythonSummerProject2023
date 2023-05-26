@@ -1,0 +1,7 @@
+print(*[[i for i in range(4)] for j in range(4)])
+print()
+print(*[[i + j for i in range(4)] for j in range(4)])
+print()
+print(*[[i * j for i in range(4)] for j in range(4)])
+print()
+print(*[[(lambda x, y: x ** y)(i, j) for i in range(4)] for j in range(4)])
