@@ -1,4 +1,4 @@
-import calendar, locale, datetime
+import calendar, locale
 
 #Названия месяцев на русском
 locale.setlocale(locale.LC_ALL, "ru")

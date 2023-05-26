@@ -20,11 +20,11 @@ sum = reduce(lambda x, y: x + y, [1, 2, 3, 4, 5])
 fact = reduce(lambda x, y: x * y, [1, 2, 3, 4, 5])
 print(sum, fact)
 
-with open ("../Texts/text_02.txt", "w", encoding ="utf-8") as fout:
+with open ("../../Texts/text_02.txt", "w", encoding ="utf-8") as fout:
     for i in range(10):
         print(i, i**2, file = fout)
         print(111, i, i**2)
-with open ("../Texts/text_02.txt", "r", encoding ="utf-8") as fin:
+with open ("../../Texts/text_02.txt", "r", encoding ="utf-8") as fin:
     for i in fin:
         print(222, i.strip())
 
@@ -32,9 +32,9 @@ from openpyxl import Workbook
 wb = Workbook()
 wb.save("../Texts/text_05.xlsx")
 
-with open ("../Texts/text_01.txt", "r", encoding ="utf-8") as fin:
+with open ("../../Texts/text_01.txt", "r", encoding ="utf-8") as fin:
     print(fin.readlines())
-with open ("../Texts/text_02.txt", "w", encoding ="utf-8") as fout, open ("../Texts/text_01.txt", "r", encoding ="utf-8") as fin:
+with open ("../../Texts/text_02.txt", "w", encoding ="utf-8") as fout, open ("../../Texts/text_01.txt", "r", encoding ="utf-8") as fin:
     for line in fin:
         print(line.strip(), file = fout)
 

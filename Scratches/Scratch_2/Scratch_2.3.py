@@ -1,5 +1,5 @@
 import openpyxl
-wb = openpyxl.load_workbook("../Texts/text_06.xlsx")
+wb = openpyxl.load_workbook("../../Texts/text_06.xlsx")
 ws = wb.active
 d = {}
 for i in range(1, ws.max_row + 1):
