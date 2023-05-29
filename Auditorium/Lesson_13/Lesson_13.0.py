@@ -1,2 +1,9 @@
-print(*[k ** 2 if k % 2 == 0 else k ** 3 for k in range(1, int(input("Введите число: ")) + 1)])
-print(*[k ** 2 if k % 2 == 0 else k ** 3 if k % 3 == 0 else k ** 4 for k in range(1, int(input("Введите число: ")) + 1)])
+def f(n):
+    for x in range(n):
+        if x % 2 == 0:
+            yield x ** 2
+        else:
+            yield x ** 3
+g = f(int(input("Введите n: ")))
+for k in g:
+    print(f"{k = }")

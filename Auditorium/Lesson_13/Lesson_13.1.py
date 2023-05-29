@@ -1,7 +1,11 @@
-import itertools
-
-for i in itertools.combinations([1, 2, 3, 4, 5], 3):
-    print(*i)
-print()
-for k in itertools.combinations_with_replacement([1, 2, 3, 4, 5], 3):
-    print(*k)
+def f(n):
+    for x in range(n):
+        yield x ** 2
+g = f(int(input("Введите n: ")))
+for _ in range(10):
+    try:
+        print(next(g))
+    except StopIteration:
+        print("Стоп!")
+        break
+print("Стоп! Стоп!")
