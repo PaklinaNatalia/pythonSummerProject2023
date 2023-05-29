@@ -1,0 +1,2 @@
+print(*[k ** 2 if k % 2 == 0 else k ** 3 for k in range(1, int(input("Введите число: ")) + 1)])
+print(*[k ** 2 if k % 2 == 0 else k ** 3 if k % 3 == 0 else k ** 4 for k in range(1, int(input("Введите число: ")) + 1)])
