@@ -1,0 +1,1 @@
+print(*[k for k in range(1, int(input("Введите k: "))) for i in range(k)], sep = ", ")
