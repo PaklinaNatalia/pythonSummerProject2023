@@ -1,3 +1,4 @@
+#Нечетные числа из списка
 def nechet(n):
     odd_numbers = []
     for i in n:
