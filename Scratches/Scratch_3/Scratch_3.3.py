@@ -6,7 +6,6 @@ except Exception as e:
 def f(n):
     for x in range(n):
         yield x ** 2
-
 g = f(10)
 while True:
     try:
@@ -20,5 +19,4 @@ def sumn(n):
         return 0
     else:
         return n + sumn(n - 1)
-
 print(sumn(int(input("Введите n: "))))

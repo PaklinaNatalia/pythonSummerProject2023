@@ -3,7 +3,6 @@ print(*[k ** 2 if k % 2 == 0 else k ** 3 if k % 3 == 0 else k ** 4 for k in rang
 print()
 
 import itertools
-
 for i in itertools.combinations([1, 2, 3, 4, 5], 3):
     print(*i)
 print()
@@ -37,7 +36,6 @@ print()
 def fun(n):
     for x in range(n):
         yield x ** 2
-
 g = fun(int(input("Введите n: ")))
 for k in g:
     print(k)
