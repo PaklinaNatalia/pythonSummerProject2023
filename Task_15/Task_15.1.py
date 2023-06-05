@@ -3,10 +3,10 @@ lst = []
 
 def rec_dict(d, x = int(input("Введите значение ключа: "))):
     for k, v in d.items():
+        if k == x:
+            lst.append(v)
         if type(v) == dict:
             rec_dict(v)
-        elif k == x:
-            lst.append(v)
 
 rec_dict(dct)
 print(lst)
