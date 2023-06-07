@@ -1,0 +1,5 @@
+Wed Jun  7 20:19:28 2023 sleep Start
+Wed Jun  7 20:19:30 2023 sleep Finish
+Wed Jun  7 20:19:30 2023 test Start
+Wed Jun  7 20:19:30 2023 test Error! division by zero
+Wed Jun  7 20:19:30 2023 test Finish
