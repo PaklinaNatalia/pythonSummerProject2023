@@ -19,9 +19,11 @@ class Pet:
     def feed(self, food):
         while self.satiety < 100:
             self.satiety += food
-        self.info()
+            w = self.weight + (food/100)
+            self.weight = w
 
 a = Pet("Snow", 2.5, 25)
 a.hungry()
+print()
 a.feed(5)
 a.hungry()
