@@ -26,3 +26,5 @@ for n, i in enumerate(s):
         i = "kw"
         s[n] = i
 print(s)
+
+s = list(map(int, input("Введите числа: ").split()))
