@@ -29,3 +29,7 @@ x = input("Введите x: ")
 f1 = type(x, (), {"f2": True})
 obj = f1()
 print(obj)
+
+s1 = input("Введите строку 1: ")
+s2 = input("Введите строку 2: ")
+print(sum([i != j for i, j in zip(s1, s2)]))
